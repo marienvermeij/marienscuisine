@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marien’s Cuisine — Private Dining</title>
-  <meta name="description" content="Private dining by Marien — [fine] Dining at Home or on Location. Intieme fine dining ervaringen bij u thuis of op locatie.">
+  <meta name="description" content="Private dining by Marien — [fine] Dining at Home of op locatie. Intieme fine dining ervaringen bij u thuis of op locatie.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b0b0c'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Georgia, serif' font-size='34' fill='%23b11226'%3EMC%3C/text%3E%3C/svg%3E">
   <meta property="og:title" content="Marien’s Cuisine — Private Dining">
-  <meta property="og:description" content="Private dining by Marien — [fine] Dining at Home or on Location. Intieme fine dining ervaringen bij u thuis of op locatie.">
+  <meta property="og:description" content="Private dining by Marien — [fine] Dining at Home of op locatie.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marienscuisine.nl">
   <style>
@@ -34,8 +34,8 @@
     .btns, .cta-inline { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
     .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; text-decoration:none; border:1px solid var(--ring); background:#1f1f22; }
     .btn:hover { background: var(--accent); color:#fff; border-color: var(--accent); }
-    .portrait { width: 100%; aspect-ratio: 1/1; border-radius: 18px; overflow:hidden; background: #0f0f10; border:1px solid var(--ring); display:grid; place-items:center; }
-    .portrait svg { width: 60%; height: auto; }
+    .portrait { width: 100%; aspect-ratio: 1/1; border-radius: 18px; overflow:hidden; background: #0f0f10; border:1px solid var(--ring); }
+    .portrait img { width:100%; height:100%; object-fit: cover; display:block; }
     .section { padding: 28px 0; }
     .card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)), var(--card); border:1px solid var(--ring); border-radius: 20px; padding: 22px; }
     .features { display:grid; gap:14px; grid-template-columns: repeat(3, 1fr); }
@@ -56,7 +56,7 @@
   <header class="container nav" aria-label="Top">
     <div class="brand">Marien’s Cuisine</div>
     <div class="cta-inline">
-      <!-- PDF-links: bestanden liggen in de root -->
+      <!-- PDF-links: liggen in de root -->
       <a href="/stamppot.pdf" target="_blank" rel="noopener" aria-label="Bekijk stamppot menu">Stamppot (PDF)</a>
       <a href="/4gangen.pdf" target="_blank" rel="noopener" aria-label="Bekijk 4 gangen menu">4 Gangen Menu (PDF)</a>
       <a href="tel:+31653591134" aria-label="Bel Marien">Bel: +31 6 5359 1134</a>
@@ -77,17 +77,20 @@
           <a class="btn" href="mailto:marienvermeij@gmail.com" aria-label="E-mail Marien">✉️ E-mail</a>
         </div>
       </div>
+
+      <!-- Portretfoto: vervang bestandsnaam indien nodig -->
       <div class="portrait">
-        <!-- Placeholder portret (vervang dit door <img src="portrait.jpg" alt="Marien aan het koken"> als je een echte foto hebt) -->
-        <svg viewBox="0 0 100 100" role="img" aria-label="Marien’s Cuisine">
-          <defs>
-            <linearGradient id="g" x1="0" x2="1">
-              <stop offset="0" stop-color="#1a1a1d"/><stop offset="1" stop-color="#2a2a2e"/>
-            </linearGradient>
-          </defs>
-          <rect width="100" height="100" rx="14" fill="url(#g)"/>
-          <text x="50" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#b11226">MC</text>
-        </svg>
+        <img src="/unnamed.jpg" alt="Marien aan het koken">
+      </div>
+    </section>
+
+    <!-- Simple gallery met je 3 foto's -->
+    <section class="section">
+      <div class="gallery">
+        <div class="shot"><img src="/unnamed.jpg" alt="Gerecht of sfeer — 1"></div>
+        <div class="shot"><img src="/unnamed-1.jpg" alt="Gerecht of sfeer — 2"></div>
+        <div class="shot"><img src="/unnamed-2.jpg" alt="Gerecht of sfeer — 3"></div>
+        <!-- Als je later meer foto's hebt, voeg extra .shot-blokken toe -->
       </div>
     </section>
   </main>
