@@ -11,43 +11,31 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marienscuisine.nl">
   <style>
-    :root {
-      --bg: #0b0b0c;
-      --text: #ffffff;
-      --muted: #cfcfd2;
-      --accent: #b11226;
-      --card: #141415;
-      --ring: rgba(255,255,255,0.12);
-    }
+    :root { --bg:#0b0b0c; --text:#ffffff; --muted:#cfcfd2; --accent:#b11226; --card:#141415; --ring:rgba(255,255,255,0.12); }
     * { box-sizing: border-box; }
-    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; }
     a { color: inherit; }
     .container { max-width: 1080px; margin: 0 auto; padding: 20px; }
-    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 0; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0; }
     .brand { font-weight:800; letter-spacing:.2px; font-size: clamp(20px, 3.4vw, 28px); }
     .cta-inline a { display:inline-block; padding:10px 14px; border-radius:12px; text-decoration:none; border:1px solid var(--ring); background:#1f1f22; }
     .cta-inline a:hover { background: var(--accent); border-color: var(--accent); }
-    .hero { display:grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items:center; padding: 28px 0 12px; }
+    .hero { display:grid; grid-template-columns: 1.1fr .9fr; gap:24px; align-items:center; padding:28px 0 12px; }
     .hero h1 { font-size: clamp(28px, 5.5vw, 54px); margin:0 0 6px; }
-    .tagline { font-size: clamp(14px, 2.6vw, 18px); color:var(--muted); margin-bottom: 16px; }
-    .hero p { color: var(--muted); line-height:1.6; }
+    .tagline { font-size: clamp(14px, 2.6vw, 18px); color:var(--muted); margin-bottom:16px; }
+    .hero p { color:var(--muted); line-height:1.6; }
     .btns, .cta-inline { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
     .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; text-decoration:none; border:1px solid var(--ring); background:#1f1f22; }
     .btn:hover { background: var(--accent); color:#fff; border-color: var(--accent); }
-    .portrait { width: 100%; aspect-ratio: 1/1; border-radius: 18px; overflow:hidden; background: #0f0f10; border:1px solid var(--ring); }
-    .portrait img { width:100%; height:100%; object-fit: cover; display:block; }
-    .section { padding: 28px 0; }
-    .card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)), var(--card); border:1px solid var(--ring); border-radius: 20px; padding: 22px; }
-    .features { display:grid; gap:14px; grid-template-columns: repeat(3, 1fr); }
-    .feat { background:#111112; border:1px solid var(--ring); border-radius:14px; padding:16px; color:var(--muted); }
+    .portrait { width:100%; aspect-ratio:1/1; border-radius:18px; overflow:hidden; background:#0f0f10; border:1px solid var(--ring); }
+    .portrait img { width:100%; height:100%; object-fit:cover; display:block; }
+    .section { padding:28px 0; }
     .gallery { display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; }
     .gallery .shot { border-radius:16px; overflow:hidden; border:1px solid var(--ring); background:#0f0f10; }
-    .gallery img { width:100%; height:100%; object-fit: cover; display:block; aspect-ratio: 4/3; }
-    .cta-block { text-align:center; padding: 24px; border:1px solid var(--ring); border-radius: 20px; background:#121214; }
-    .footer { color:#8b8b90; font-size: 12px; text-align:center; padding: 20px 0 28px; }
+    .gallery img { width:100%; height:100%; object-fit:cover; display:block; aspect-ratio: 4/3; }
+    .footer { color:#8b8b90; font-size:12px; text-align:center; padding:20px 0 28px; }
     @media (max-width: 880px) {
       .hero { grid-template-columns: 1fr; }
-      .features { grid-template-columns: 1fr; }
       .gallery { grid-template-columns: 1fr; }
     }
   </style>
@@ -56,7 +44,6 @@
   <header class="container nav" aria-label="Top">
     <div class="brand">Marien’s Cuisine</div>
     <div class="cta-inline">
-      <!-- PDF-links: liggen in de root -->
       <a href="/stamppot.pdf" target="_blank" rel="noopener" aria-label="Bekijk stamppot menu">Stamppot (PDF)</a>
       <a href="/4gangen.pdf" target="_blank" rel="noopener" aria-label="Bekijk 4 gangen menu">4 Gangen Menu (PDF)</a>
       <a href="tel:+31653591134" aria-label="Bel Marien">Bel: +31 6 5359 1134</a>
@@ -71,26 +58,23 @@
         <div class="tagline">Private dining, bruiloften en intieme diners op maat — fine dining bij u thuis of op locatie.</div>
         <p>Ik ben Marien. Ik kook op hoog niveau, bij u aan tafel. We bespreken uw wensen, ik stel een menu voor, en verzorg alles van mise-en-place tot service. Geen vaste pakketten — wél een ervaring die bij u past.</p>
         <div class="cta-inline">
-          <a class="btn" href="/stamppot.pdf" target="_blank" rel="noopener" aria-label="Bekijk stamppot menu">Stamppot (PDF)</a>
-          <a class="btn" href="/4gangen.pdf" target="_blank" rel="noopener" aria-label="Bekijk 4 gangen menu">4 Gangen Menu (PDF)</a>
-          <a class="btn" href="tel:+31653591134" aria-label="Bel Marien">📞 Bel +31 6 5359 1134</a>
-          <a class="btn" href="mailto:marienvermeij@gmail.com" aria-label="E-mail Marien">✉️ E-mail</a>
+          <a class="btn" href="/stamppot.pdf" target="_blank" rel="noopener">Stamppot (PDF)</a>
+          <a class="btn" href="/4gangen.pdf" target="_blank" rel="noopener">4 Gangen Menu (PDF)</a>
+          <a class="btn" href="tel:+31653591134">📞 Bel +31 6 5359 1134</a>
+          <a class="btn" href="mailto:marienvermeij@gmail.com">✉️ E-mail</a>
         </div>
       </div>
-
-      <!-- Portretfoto: vervang bestandsnaam indien nodig -->
+      <!-- Hero-foto: de 'unnamed-3.jpg' rechts naast de tekst -->
       <div class="portrait">
-        <img src="/unnamed.jpg" alt="Marien aan het koken">
+        <img src="/unnamed-3.jpg" alt="Marien aan het koken">
       </div>
     </section>
 
-    <!-- Simple gallery met je 3 foto's -->
+    <!-- Gallery met de overige 2 foto's verder naar beneden -->
     <section class="section">
       <div class="gallery">
-        <div class="shot"><img src="/unnamed.jpg" alt="Gerecht of sfeer — 1"></div>
-        <div class="shot"><img src="/unnamed-1.jpg" alt="Gerecht of sfeer — 2"></div>
-        <div class="shot"><img src="/unnamed-2.jpg" alt="Gerecht of sfeer — 3"></div>
-        <!-- Als je later meer foto's hebt, voeg extra .shot-blokken toe -->
+        <div class="shot"><img src="/unnamed-1.jpg" alt="Gerecht of sfeer — 1"></div>
+        <div class="shot"><img src="/unnamed-2.jpg" alt="Gerecht of sfeer — 2"></div>
       </div>
     </section>
   </main>
