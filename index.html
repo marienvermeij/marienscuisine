@@ -31,7 +31,7 @@
     .hero h1 { font-size: clamp(28px, 5.5vw, 54px); margin:0 0 6px; }
     .tagline { font-size: clamp(14px, 2.6vw, 18px); color:var(--muted); margin-bottom: 16px; }
     .hero p { color: var(--muted); line-height:1.6; }
-    .btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+    .btns, .cta-inline { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
     .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; text-decoration:none; border:1px solid var(--ring); background:#1f1f22; }
     .btn:hover { background: var(--accent); color:#fff; border-color: var(--accent); }
     .portrait { width: 100%; aspect-ratio: 1/1; border-radius: 18px; overflow:hidden; background: #0f0f10; border:1px solid var(--ring); }
@@ -56,8 +56,8 @@
   <header class="container nav" aria-label="Top">
     <div class="brand">Marien’s Cuisine</div>
     <div class="cta-inline">
-      <a href="/assets/stamppot.pdf" target="_blank" rel="noopener" aria-label="Bekijk stamppot menu">Stamppot (PDF)</a>
-      <a href="/assets/4gangen.pdf" target="_blank" rel="noopener" aria-label="Bekijk 4 gangen menu">4 Gangen Menu (PDF)</a>
+      <a href="/stamppot.pdf" target="_blank" rel="noopener" aria-label="Bekijk stamppot menu">Stamppot (PDF)</a>
+      <a href="/4gangen.pdf" target="_blank" rel="noopener" aria-label="Bekijk 4 gangen menu">4 Gangen Menu (PDF)</a>
       <a href="tel:+31653591134" aria-label="Bel Marien">Bel: +31 6 5359 1134</a>
       <a href="mailto:marienvermeij@gmail.com" aria-label="E-mail Marien">E-mail</a>
     </div>
@@ -70,15 +70,14 @@
         <div class="tagline">Private dining, bruiloften en intieme diners op maat — fine dining bij u thuis of op locatie.</div>
         <p>Ik ben Marien. Ik kook op hoog niveau, bij u aan tafel. We bespreken uw wensen, ik stel een menu voor, en verzorg alles van mise-en-place tot service. Geen vaste pakketten — wél een ervaring die bij u past.</p>
         <div class="cta-inline">
-        <a href="/stamppot.pdf" target="_blank" rel="noopener">Stamppot (PDF)</a>
-<a href="/4gangen.pdf" target="_blank" rel="noopener">4 Gangen Menu (PDF)</a>
-
-          <a href="tel:+31653591134" aria-label="Bel Marien">Bel: +31 6 5359 1134</a>
-          <a href="mailto:marienvermeij@gmail.com" aria-label="E-mail Marien">E-mail</a>
+          <a class="btn" href="/stamppot.pdf" target="_blank" rel="noopener" aria-label="Bekijk stamppot menu">Stamppot (PDF)</a>
+          <a class="btn" href="/4gangen.pdf" target="_blank" rel="noopener" aria-label="Bekijk 4 gangen menu">4 Gangen Menu (PDF)</a>
+          <a class="btn" href="tel:+31653591134" aria-label="Bel Marien">📞 Bel +31 6 5359 1134</a>
+          <a class="btn" href="mailto:marienvermeij@gmail.com" aria-label="E-mail Marien">✉️ E-mail</a>
         </div>
       </div>
       <div class="portrait">
-        <!-- bestaande foto -->
+        <!-- Voeg hier je <img> terug als je die had -->
       </div>
     </section>
   </main>
@@ -88,4 +87,3 @@
   </footer>
 </body>
 </html>
-
